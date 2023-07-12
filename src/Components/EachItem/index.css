@@ -1,0 +1,117 @@
+/* Write your CSS here */
+.cardItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 25px;
+    margin: 2.2rem;
+    border-radius: 1.5rem;
+    min-width: calc(100% / 6);
+    border-style: none;
+  }
+  
+  .cardTitle {
+    font-size: 1rem;
+    color: #1b36bf;
+  }
+  
+  .cardDescription {
+    display: none;
+  }
+  
+  .popup {
+    height: 450px;
+    width: 50%;
+    background-color: #2e5a88;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    color: white;
+  }
+  
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 0px 15px;
+  }
+  
+  .popupbutton {
+    background-color: transparent;
+    font-size: 25px;
+    border-style: none;
+    color: white;
+  }
+  
+  .popup-bottom {
+    margin: 3rem;
+    border: 2px solid black;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .popup-title {
+    margin: auto;
+  }
+  
+  .blur {
+    background-color: #808080;
+  }
+  
+  .popup-joketext {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .nextJokeBtn {
+    background-color: blue;
+    padding: 15px;
+    margin: 2rem;
+    color: white;
+    border-style: none;
+  }
+  
+  @media screen and (min-width: 1199px) {
+    .cardDescription {
+      display: block;
+      margin-top: 1rem;
+      color: #1b36bf;
+    }
+  }
+  
+  @media screen and (min-width: 500px) and (max-width: 767px) {
+    .cardItem {
+      min-width: calc(100% / 15);
+    }
+    .popup {
+      min-height: calc(100% / 4);
+      max-height: calc(100% / 3);
+      width: 85%;
+      background-color: #2e5a88;
+      position: absolute;
+      top: 25%;
+      color: white;
+      left: 10%;
+    }
+    .popup-joketext {
+        font-size: 15px;
+        text-align: center;
+      }
+    .popup-bottom {
+      margin: 3rem;
+      border: 2px solid black;
+      min-height: calc(100% / 3);
+      max-height: calc(100%/2);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+  }
+  

@@ -1,0 +1,33 @@
+/* Write your CSS here */
+.background_container {
+    background-image: linear-gradient(to right, #4ba4bf, #1e397d);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  
+  .title {
+    padding-top: 0.25rem;
+    color: green;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 450px) {
+    .cardsContainer {
+      min-width: calc(100% / 3);
+      min-height: calc(100% / 3);
+    }
+  }
+  
